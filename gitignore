@@ -1,0 +1,21 @@
+
+---
+
+### **.gitignore**
+
+Este arquivo `.gitignore` exclui arquivos e pastas que não devem ser incluídos no controle de versão.
+
+```gitignore
+# Arquivos e diretórios de banco de dados
+biblioteca.db
+
+# Arquivos do Python
+*.pyc
+__pycache__/
+
+# Arquivos de ambiente virtual
+venv/
+env/
+ENV/
+.venv/
+.ENV/
