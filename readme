@@ -1,0 +1,42 @@
+# Sistema de Gestão de Biblioteca com Controle de Empréstimos
+
+Este é um sistema simples para a gestão de uma biblioteca, permitindo gerenciar livros, usuários e controlar empréstimos e devoluções. O projeto utiliza **SQLite** para o banco de dados local e é implementado em **Python**.
+
+## Funcionalidades
+
+- **Inserção de livros**: Adiciona livros ao banco de dados.
+- **Cadastro de usuários**: Registra usuários com informações como nome, sobrenome, endereço, e-mail e telefone.
+- **Realização de empréstimos**: Registra o empréstimo de livros a usuários.
+- **Atualização de devoluções**: Atualiza a data de devolução dos livros.
+- **Consulta de livros emprestados**: Exibe todos os livros atualmente emprestados e os usuários que os emprestaram.
+
+## Tecnologias Utilizadas
+
+- **Python 3.x**
+- **SQLite** (banco de dados local)
+
+## Requisitos
+
+- Python 3.x instalado
+- Biblioteca `sqlite3` (já incluída na instalação padrão do Python)
+
+## Como Executar
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/biblioteca-sistema.git
+Entre na pasta do projeto:
+cd biblioteca-sistema
+Execute o script principal:
+python biblioteca.py
+O menu será exibido, e você pode escolher entre as opções para inserir livros, cadastrar usuários, registrar empréstimos, atualizar devoluções e visualizar os livros emprestados.
+
+Estrutura do Banco de Dados
+Tabelas
+livros: Armazena as informações dos livros (título, autor, editora, ano de publicação, ISBN).
+usuarios: Armazena as informações dos usuários (nome, sobrenome, endereço, e-mail, telefone).
+emprestimos: Registra os empréstimos realizados (ID do livro, ID do usuário, data do empréstimo e data de devolução).
+Melhorias Futuras
+Implementação de uma interface gráfica para facilitar a interação do usuário.
+Sistema de notificações para lembrar os usuários de devoluções pendentes.
+Relatórios de livros mais emprestados e usuários mais ativos.
